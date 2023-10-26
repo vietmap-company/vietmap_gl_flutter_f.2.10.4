@@ -238,11 +238,11 @@ class PlaceCircleBodyState extends State<PlaceCircleBody> {
                   children: <Widget>[
                     Column(
                       children: <Widget>[
-                        TextButton(
+                        ElevatedButton(
                           child: const Text('add'),
                           onPressed: (_circleCount == 12) ? null : _add,
                         ),
-                        TextButton(
+                        ElevatedButton(
                           child: const Text('remove'),
                           onPressed: (_selectedCircle == null) ? null : _remove,
                         ),
@@ -250,61 +250,61 @@ class PlaceCircleBodyState extends State<PlaceCircleBody> {
                     ),
                     Column(
                       children: <Widget>[
-                        TextButton(
+                        ElevatedButton(
                           child: const Text('change circle-opacity'),
                           onPressed: (_selectedCircle == null)
                               ? null
                               : _changeCircleOpacity,
                         ),
-                        TextButton(
+                        ElevatedButton(
                           child: const Text('change circle-radius'),
                           onPressed: (_selectedCircle == null)
                               ? null
                               : _changeCircleRadius,
                         ),
-                        TextButton(
+                        ElevatedButton(
                           child: const Text('change circle-color'),
                           onPressed: (_selectedCircle == null)
                               ? null
                               : _changeCircleColor,
                         ),
-                        TextButton(
+                        ElevatedButton(
                           child: const Text('change circle-blur'),
                           onPressed: (_selectedCircle == null)
                               ? null
                               : _changeCircleBlur,
                         ),
-                        TextButton(
+                        ElevatedButton(
                           child: const Text('change circle-stroke-width'),
                           onPressed: (_selectedCircle == null)
                               ? null
                               : _changeCircleStrokeWidth,
                         ),
-                        TextButton(
+                        ElevatedButton(
                           child: const Text('change circle-stroke-color'),
                           onPressed: (_selectedCircle == null)
                               ? null
                               : _changeCircleStrokeColor,
                         ),
-                        TextButton(
+                        ElevatedButton(
                           child: const Text('change circle-stroke-opacity'),
                           onPressed: (_selectedCircle == null)
                               ? null
                               : _changeCircleStrokeOpacity,
                         ),
-                        TextButton(
+                        ElevatedButton(
                           child: const Text('change position'),
                           onPressed: (_selectedCircle == null)
                               ? null
                               : _changePosition,
                         ),
-                        TextButton(
+                        ElevatedButton(
                           child: const Text('toggle draggable'),
                           onPressed: (_selectedCircle == null)
                               ? null
                               : _changeDraggable,
                         ),
-                        TextButton(
+                        ElevatedButton(
                           child: const Text('get current LatLng'),
                           onPressed:
                               (_selectedCircle == null) ? null : _getLatLng,

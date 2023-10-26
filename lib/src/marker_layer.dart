@@ -63,7 +63,7 @@ class _MarkerLayerState extends State<MarkerLayer> {
             child: widget.markers[i].child,
             width: widget.markers[i].width,
             height: widget.markers[i].height,
-            alignment: widget.markers[i].alignment,    
+            alignment: widget.markers[i].alignment,
           ));
         }
       }
@@ -90,7 +90,7 @@ class _MarkerLayerState extends State<MarkerLayer> {
     _mapController.getPlatform.onCameraIdlePlatform.add(onMarkerLayerListener!);
     _mapController.addListener(onMapListener!);
 
-    WidgetsBinding.instance.addPostFrameCallback((timeStamp) async {
+    WidgetsBinding.instance?.addPostFrameCallback((timeStamp) async {
       if (Platform.isIOS) {
         await Future.delayed(Duration(milliseconds: 100));
       }

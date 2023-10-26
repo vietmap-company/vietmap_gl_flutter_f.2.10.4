@@ -3,6 +3,7 @@
 // found in the LICENSE file.
 
 import 'dart:async';
+import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -184,17 +185,17 @@ class PolylineBodyState extends State<PolylineBody> {
                   children: <Widget>[
                     Row(
                       children: <Widget>[
-                        TextButton(
+                        ElevatedButton(
                           child: const Text('add'),
                           onPressed:
                               (_polylineCount == 12) ? null : _addPolyline,
                         ),
-                        TextButton(
+                        ElevatedButton(
                           child: const Text('remove'),
                           onPressed:
                               (_selectedPolyline == null) ? null : _remove,
                         ),
-                        TextButton(
+                        ElevatedButton(
                           child: const Text('move'),
                           onPressed: (_selectedPolyline == null)
                               ? null
@@ -202,7 +203,7 @@ class PolylineBodyState extends State<PolylineBody> {
                                   await _move();
                                 },
                         ),
-                        TextButton(
+                        ElevatedButton(
                           child: const Text('change line-pattern'),
                           onPressed: (_selectedPolyline == null)
                               ? null
@@ -212,18 +213,18 @@ class PolylineBodyState extends State<PolylineBody> {
                     ),
                     Row(
                       children: <Widget>[
-                        TextButton(
+                        ElevatedButton(
                           child: const Text('change alpha'),
                           onPressed:
                               (_selectedPolyline == null) ? null : _changeAlpha,
                         ),
-                        TextButton(
+                        ElevatedButton(
                           child: const Text('toggle visible'),
                           onPressed: (_selectedPolyline == null)
                               ? null
                               : _toggleVisible,
                         ),
-                        TextButton(
+                        ElevatedButton(
                           child: const Text('print current LatLng'),
                           onPressed: (_selectedPolyline == null)
                               ? null

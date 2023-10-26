@@ -174,9 +174,9 @@ class BatchAddBodyState extends State<BatchAddBody> {
                   children: <Widget>[
                     Column(
                       children: <Widget>[
-                        TextButton(
+                        ElevatedButton(
                             child: const Text('batch add'), onPressed: _add),
-                        TextButton(
+                        ElevatedButton(
                             child: const Text('batch remove'),
                             onPressed: _remove),
                       ],

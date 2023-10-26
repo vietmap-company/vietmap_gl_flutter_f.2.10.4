@@ -95,7 +95,7 @@ class _ClusterLayerState extends State<ClusterLayer> {
         .add(onClusterLayerListener!);
     _mapController.addListener(onMapListener!);
 
-    WidgetsBinding.instance.addPostFrameCallback((timeStamp) async {
+    WidgetsBinding.instance?.addPostFrameCallback((timeStamp) async {
       if (Platform.isIOS) {
         await Future.delayed(Duration(milliseconds: 100));
       }

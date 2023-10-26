@@ -3,6 +3,7 @@
 // found in the LICENSE file.
 
 import 'dart:async';
+import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -117,7 +118,7 @@ class PlaceSymbolBodyState extends State<PlaceSymbolBody> {
               children: <Widget>[
                 Column(
                   children: <Widget>[
-                    TextButton(
+                    ElevatedButton(
                       child: const Text('Add source (asset image)'),
                       onPressed: sourceAdded
                           ? null
@@ -129,7 +130,7 @@ class PlaceSymbolBodyState extends State<PlaceSymbolBody> {
                               });
                             },
                     ),
-                    TextButton(
+                    ElevatedButton(
                       child: const Text('Remove source (asset image)'),
                       onPressed: sourceAdded
                           ? () async {
@@ -140,19 +141,19 @@ class PlaceSymbolBodyState extends State<PlaceSymbolBody> {
                             }
                           : null,
                     ),
-                    TextButton(
+                    ElevatedButton(
                       child: const Text('Show layer'),
                       onPressed: sourceAdded
                           ? () => addLayer(LAYER_ID, SOURCE_ID)
                           : null,
                     ),
-                    TextButton(
+                    ElevatedButton(
                       child: const Text('Show layer below water'),
                       onPressed: sourceAdded
                           ? () => addLayerBelow(LAYER_ID, SOURCE_ID, 'water')
                           : null,
                     ),
-                    TextButton(
+                    ElevatedButton(
                       child: const Text('Hide layer'),
                       onPressed:
                           sourceAdded ? () => removeLayer(LAYER_ID) : null,

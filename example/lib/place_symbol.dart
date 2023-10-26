@@ -5,6 +5,7 @@
 import 'dart:async'; // ignore: unnecessary_import
 import 'dart:core';
 import 'dart:math';
+import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -310,52 +311,52 @@ class PlaceSymbolBodyState extends State<PlaceSymbolBody> {
                   children: <Widget>[
                     Column(
                       children: <Widget>[
-                        TextButton(
+                        ElevatedButton(
                           child: const Text('add'),
                           onPressed: () => (_symbolCount == 12)
                               ? null
                               : _add("custom-marker"),
                         ),
-                        TextButton(
+                        ElevatedButton(
                           child: const Text('add all'),
                           onPressed: () => (_symbolCount == 12)
                               ? null
                               : _addAll("custom-marker"),
                         ),
-                        TextButton(
+                        ElevatedButton(
                           child: const Text('add (custom icon)'),
                           onPressed: () => (_symbolCount == 12)
                               ? null
                               : _add("assets/symbols/custom-icon.png"),
                         ),
-                        TextButton(
+                        ElevatedButton(
                           child: const Text('remove'),
                           onPressed: (_selectedSymbol == null) ? null : _remove,
                         ),
-                        TextButton(
+                        ElevatedButton(
                           child: Text(
                               '${_iconAllowOverlap ? 'disable' : 'enable'} icon overlap'),
                           onPressed: _changeIconOverlap,
                         ),
-                        TextButton(
+                        ElevatedButton(
                           child: const Text('remove all'),
                           onPressed: (_symbolCount == 0) ? null : _removeAll,
                         ),
-                        TextButton(
+                        ElevatedButton(
                           child: const Text('add (asset image)'),
                           onPressed: () => (_symbolCount == 12)
                               ? null
                               : _add(
                                   "assetImage"), //assetImage added to the style in _onStyleLoaded
                         ),
-                        TextButton(
+                        ElevatedButton(
                           child: const Text('add (network image)'),
                           onPressed: () => (_symbolCount == 12)
                               ? null
                               : _add(
                                   "networkImage"), //networkImage added to the style in _onStyleLoaded
                         ),
-                        TextButton(
+                        ElevatedButton(
                           child: const Text('add (custom font)'),
                           onPressed: () =>
                               (_symbolCount == 12) ? null : _add("customFont"),
@@ -364,52 +365,52 @@ class PlaceSymbolBodyState extends State<PlaceSymbolBody> {
                     ),
                     Column(
                       children: <Widget>[
-                        TextButton(
+                        ElevatedButton(
                           child: const Text('change alpha'),
                           onPressed:
                               (_selectedSymbol == null) ? null : _changeAlpha,
                         ),
-                        TextButton(
+                        ElevatedButton(
                           child: const Text('change icon offset'),
                           onPressed: (_selectedSymbol == null)
                               ? null
                               : _changeIconOffset,
                         ),
-                        TextButton(
+                        ElevatedButton(
                           child: const Text('change icon anchor'),
                           onPressed: (_selectedSymbol == null)
                               ? null
                               : _changeIconAnchor,
                         ),
-                        TextButton(
+                        ElevatedButton(
                           child: const Text('toggle draggable'),
                           onPressed: (_selectedSymbol == null)
                               ? null
                               : _toggleDraggable,
                         ),
-                        TextButton(
+                        ElevatedButton(
                           child: const Text('change position'),
                           onPressed: (_selectedSymbol == null)
                               ? null
                               : _changePosition,
                         ),
-                        TextButton(
+                        ElevatedButton(
                           child: const Text('change rotation'),
                           onPressed: (_selectedSymbol == null)
                               ? null
                               : _changeRotation,
                         ),
-                        TextButton(
+                        ElevatedButton(
                           child: const Text('toggle visible'),
                           onPressed:
                               (_selectedSymbol == null) ? null : _toggleVisible,
                         ),
-                        TextButton(
+                        ElevatedButton(
                           child: const Text('change zIndex'),
                           onPressed:
                               (_selectedSymbol == null) ? null : _changeZIndex,
                         ),
-                        TextButton(
+                        ElevatedButton(
                           child: const Text('get current LatLng'),
                           onPressed:
                               (_selectedSymbol == null) ? null : _getLatLng,

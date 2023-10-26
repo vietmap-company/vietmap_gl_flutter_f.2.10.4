@@ -91,7 +91,7 @@ class MapUiBodyState extends State<MapUiBody> {
     final MyLocationTrackingMode nextType = MyLocationTrackingMode.values[
         (_myLocationTrackingMode.index + 1) %
             MyLocationTrackingMode.values.length];
-    return TextButton(
+    return ElevatedButton(
       child: Text('change to $nextType'),
       onPressed: () {
         setState(() {
@@ -102,7 +102,7 @@ class MapUiBodyState extends State<MapUiBody> {
   }
 
   Widget _queryFilterToggler() {
-    return TextButton(
+    return ElevatedButton(
       child: Text(
           'filter zoo on click ${_featureQueryFilter == null ? 'disabled' : 'enabled'}'),
       onPressed: () {
@@ -122,7 +122,7 @@ class MapUiBodyState extends State<MapUiBody> {
   }
 
   Widget _mapSizeToggler() {
-    return TextButton(
+    return ElevatedButton(
       child: Text('${_mapExpanded ? 'shrink' : 'expand'} map'),
       onPressed: () {
         setState(() {
@@ -133,7 +133,7 @@ class MapUiBodyState extends State<MapUiBody> {
   }
 
   Widget _compassToggler() {
-    return TextButton(
+    return ElevatedButton(
       child: Text('${_compassEnabled ? 'disable' : 'enable'} compasss'),
       onPressed: () {
         setState(() {
@@ -144,7 +144,7 @@ class MapUiBodyState extends State<MapUiBody> {
   }
 
   Widget _latLngBoundsToggler() {
-    return TextButton(
+    return ElevatedButton(
       child: Text(
         _cameraTargetBounds.bounds == null
             ? 'bound camera target'
@@ -161,7 +161,7 @@ class MapUiBodyState extends State<MapUiBody> {
   }
 
   Widget _zoomBoundsToggler() {
-    return TextButton(
+    return ElevatedButton(
       child: Text(_minMaxZoomPreference.minZoom == null
           ? 'bound zoom'
           : 'release zoom'),
@@ -176,7 +176,7 @@ class MapUiBodyState extends State<MapUiBody> {
   }
 
   // Widget _setStyleToSatellite() {
-  //   return TextButton(
+  //   return ElevatedButton(
   //     child: Text(
   //         'change map style to ${_styleStringLabels[(_styleStringIndex + 1) % _styleStringLabels.length]}'),
   //     onPressed: () {
@@ -188,7 +188,7 @@ class MapUiBodyState extends State<MapUiBody> {
   // }
 
   Widget _rotateToggler() {
-    return TextButton(
+    return ElevatedButton(
       child: Text('${_rotateGesturesEnabled ? 'disable' : 'enable'} rotate'),
       onPressed: () {
         setState(() {
@@ -199,7 +199,7 @@ class MapUiBodyState extends State<MapUiBody> {
   }
 
   Widget _scrollToggler() {
-    return TextButton(
+    return ElevatedButton(
       child: Text('${_scrollGesturesEnabled ? 'disable' : 'enable'} scroll'),
       onPressed: () {
         setState(() {
@@ -215,7 +215,7 @@ class MapUiBodyState extends State<MapUiBody> {
         : _doubleClickToZoomEnabled!
             ? 'unset'
             : 'enable';
-    return TextButton(
+    return ElevatedButton(
       child: Text('$stateInfo double click to zoom'),
       onPressed: () {
         setState(() {
@@ -232,7 +232,7 @@ class MapUiBodyState extends State<MapUiBody> {
   }
 
   Widget _tiltToggler() {
-    return TextButton(
+    return ElevatedButton(
       child: Text('${_tiltGesturesEnabled ? 'disable' : 'enable'} tilt'),
       onPressed: () {
         setState(() {
@@ -243,7 +243,7 @@ class MapUiBodyState extends State<MapUiBody> {
   }
 
   Widget _zoomToggler() {
-    return TextButton(
+    return ElevatedButton(
       child: Text('${_zoomGesturesEnabled ? 'disable' : 'enable'} zoom'),
       onPressed: () {
         setState(() {
@@ -254,7 +254,7 @@ class MapUiBodyState extends State<MapUiBody> {
   }
 
   Widget _myLocationToggler() {
-    return TextButton(
+    return ElevatedButton(
       child: Text('${_myLocationEnabled ? 'disable' : 'enable'} my location'),
       onPressed: () {
         setState(() {
@@ -265,7 +265,7 @@ class MapUiBodyState extends State<MapUiBody> {
   }
 
   Widget _telemetryToggler() {
-    return TextButton(
+    return ElevatedButton(
       child: Text('${_telemetryEnabled ? 'disable' : 'enable'} telemetry'),
       onPressed: () {
         setState(() {
@@ -277,7 +277,7 @@ class MapUiBodyState extends State<MapUiBody> {
   }
 
   Widget _visibleRegionGetter() {
-    return TextButton(
+    return ElevatedButton(
       child: Text('get currently visible region'),
       onPressed: () async {
         var result = await mapController!.getVisibleRegion();
@@ -290,7 +290,7 @@ class MapUiBodyState extends State<MapUiBody> {
   }
 
   Widget _sourceFeaturesGetter() {
-    return TextButton(
+    return ElevatedButton(
       child: Text('get source features (maplibre)'),
       onPressed: () async {
         var result = await mapController!.querySourceFeatures(
@@ -301,7 +301,7 @@ class MapUiBodyState extends State<MapUiBody> {
   }
 
   Widget _layerVisibilityToggler() {
-    return TextButton(
+    return ElevatedButton(
       child: Text('toggle layer visibility'),
       onPressed: () async {
         _countriesVisible = !_countriesVisible;

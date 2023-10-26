@@ -3,6 +3,7 @@
 // found in the LICENSE file.
 
 import 'dart:async';
+import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -231,11 +232,11 @@ class PlacePolygonBodyState extends State<PlacePolygonBody> {
                   children: <Widget>[
                     Column(
                       children: <Widget>[
-                        TextButton(
+                        ElevatedButton(
                           child: const Text('add'),
                           onPressed: (_polygonCount == 12) ? null : _add,
                         ),
-                        TextButton(
+                        ElevatedButton(
                           child: const Text('remove'),
                           onPressed:
                               (_selectedPolygon == null) ? null : _remove,
@@ -244,37 +245,37 @@ class PlacePolygonBodyState extends State<PlacePolygonBody> {
                     ),
                     Column(
                       children: <Widget>[
-                        TextButton(
+                        ElevatedButton(
                           child: const Text('change polygon-opacity'),
                           onPressed: (_selectedPolygon == null)
                               ? null
                               : _changePolygonOpacity,
                         ),
-                        TextButton(
+                        ElevatedButton(
                           child: const Text('change polygon-color'),
                           onPressed: (_selectedPolygon == null)
                               ? null
                               : _changePolygonColor,
                         ),
-                        TextButton(
+                        ElevatedButton(
                           child: const Text('change polygon-outline-color'),
                           onPressed: (_selectedPolygon == null)
                               ? null
                               : _changePolygonOutlineColor,
                         ),
-                        TextButton(
+                        ElevatedButton(
                           child: const Text('change polygon-pattern'),
                           onPressed: (_selectedPolygon == null)
                               ? null
                               : _changePolygonPattern,
                         ),
-                        TextButton(
+                        ElevatedButton(
                           child: const Text('change position'),
                           onPressed: (_selectedPolygon == null)
                               ? null
                               : _changePosition,
                         ),
-                        TextButton(
+                        ElevatedButton(
                           child: const Text('toggle draggable'),
                           onPressed: (_selectedPolygon == null)
                               ? null

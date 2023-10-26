@@ -49,7 +49,7 @@ class GivenBoundsState extends State<GivenBounds> {
             ),
           ),
         ),
-        TextButton(
+        ElevatedButton(
           onPressed: () async {
             await mapController.setCameraBounds(
               west: 5.98865807458,
@@ -61,7 +61,7 @@ class GivenBoundsState extends State<GivenBounds> {
           },
           child: const Text('Set bounds to Germany'),
         ),
-        TextButton(
+        ElevatedButton(
           onPressed: () async {
             await mapController.setCameraBounds(
               west: -18,
