@@ -14,13 +14,13 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:vietmap_flutter_gl/src/components/kmeans.dart';
-import 'package:vietmap_flutter_gl/src/extension/marker_extension.dart';
+import 'package:vietmap_iee_map/src/components/kmeans.dart';
+import 'package:vietmap_iee_map/src/extension/marker_extension.dart';
 // import 'package:geolocator/geolocator.dart';
 
-import 'package:vietmap_gl_platform_interface/vietmap_gl_platform_interface.dart';
+import 'package:vietmap_iee_gl_platform_interface/vietmap_gl_platform_interface.dart';
 
-export 'package:vietmap_gl_platform_interface/vietmap_gl_platform_interface.dart'
+export 'package:vietmap_iee_gl_platform_interface/vietmap_gl_platform_interface.dart'
     show
         LatLng,
         LatLngBounds,

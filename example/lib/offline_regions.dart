@@ -1,6 +1,6 @@
 import 'package:collection/collection.dart' show IterableExtension;
 import 'package:flutter/material.dart';
-import 'package:vietmap_flutter_gl/vietmap_flutter_gl.dart';
+import 'package:vietmap_iee_map/vietmap_flutter_gl.dart';
 
 import 'offline_region_map.dart';
 import 'page.dart';

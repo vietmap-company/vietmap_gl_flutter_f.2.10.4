@@ -1,9 +1,9 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:vietmap_flutter_gl/vietmap_flutter_gl.dart';
+import 'package:vietmap_iee_map/vietmap_flutter_gl.dart';
 
 import 'page.dart';
-import 'package:vietmap_gl_platform_interface/vietmap_gl_platform_interface.dart';
+import 'package:vietmap_iee_gl_platform_interface/vietmap_gl_platform_interface.dart';
 
 class StyleInfo {
   final String name;
