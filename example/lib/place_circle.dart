@@ -6,7 +6,7 @@ import 'dart:async';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:vietmap_flutter_gl/vietmap_flutter_gl.dart';
+import 'package:vietmap_iee_map/vietmap_flutter_gl.dart';
 
 import 'constant.dart';
 import 'page.dart';

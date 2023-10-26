@@ -22,7 +22,7 @@ dependencies:
   device_info_plus: ^3.2.2
 
 dependency_overrides:
-  vietmap_gl_platform_interface:
+  vietmap_iee_gl_platform_interface:
     path: ../vietmap_gl_platform_interface
 
 
@@ -30,7 +30,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  vietmap_flutter_gl:
+  vietmap_iee_map:
     path: ../
 
 # For information on the generic Dart part of this file, see the
