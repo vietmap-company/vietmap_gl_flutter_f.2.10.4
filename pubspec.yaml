@@ -1,6 +1,6 @@
 name: vietmap_iee_map
 description: A Flutter map plugin for integrating Vietmap sdk inside a Flutter application, support for show a vector and raster map in Flutter. Supported on Android, iOS platforms .
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/vietmap-company
 repository: https://github.com/vietmap-company/flutter-map-sdk
 issue_tracker: https://github.com/vietmap-company/flutter-map-sdk/issues

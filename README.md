@@ -8,14 +8,14 @@ Contact [vietmap.vn](https://bit.ly/vietmap-api) to register a valid key.
 
 Add library to pubspec.yaml file
 ```yaml
-  vietmap_flutter_gl: latest_version
+  vietmap_iee_map: latest_version
 ```
 
-Check the latest version at [https://pub.dev/packages/vietmap_flutter_gl](https://pub.dev/packages/vietmap_flutter_gl)
+Check the latest version at [https://pub.dev/packages/vietmap_iee_map](https://pub.dev/packages/vietmap_iee_map)
  
 or run this command in the terminal to add the library to the project:
 ```bash
-  flutter pub add vietmap_flutter_gl
+  flutter pub add vietmap_iee_map
 ```
 ## Android config
 
